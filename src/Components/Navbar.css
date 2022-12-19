@@ -1,0 +1,27 @@
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+.navbar-img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.ruma-logo{
+    width: 100px;
+    height: 100px;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width:800px) {
+    .ruma-logo{
+        padding-left: 0;
+    }
+    nav{
+        padding: 0 2rem;
+    }
+}
