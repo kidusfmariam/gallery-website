@@ -1,0 +1,114 @@
+.moto-container{
+    width: 100%;
+    height: 139vh;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    position: relative;
+    padding-bottom: 4rem;
+    overflow-x: hidden;
+}
+.ruma-logo-svg{
+    width: 100vw;
+    height: 37vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+    opacity: 30%;
+
+}
+.moto-img{
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+}
+.moto-img-1{
+    top: 0.05%;
+    right: 0;
+    width: 23.1875%;
+    height: auto;
+}
+.moto-img-2{
+    top: 20%;
+    left: 0;
+    width: 27.68%;
+    height: 70%;
+}
+.moto-img-3{
+    width: 24%;
+    height: auto;
+    right: 18%;
+    top: 53%;
+}
+.moto-title{
+    position: absolute;
+    z-index: 3;
+    font-family: 'Lustria', serif;
+    font-size: 6vw;
+    font-weight: 400;
+    width: 85vw;
+    margin: 0 auto;
+    text-align: center;
+    top: 20%;
+    right: 8%;
+}
+.moto-second{
+    font-size: 3.5vw;
+    font-family: 'Lustria', serif;
+    opacity: .7;
+    position: absolute;
+    z-index: 3;
+    top: 43%;
+    left: 40%;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .moto-container{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .moto-container{
+        height: 100vh;
+    }
+    .moto-img-1{
+        top: 5%;
+        width: 30%;
+    }
+    .ruma-logo-svg{
+        top: 20%;
+    }
+    .moto-img-2{
+        width: 30%;
+        height: 40%;
+        top: 0;
+    }
+    .moto-img-3{
+        width: 45%;
+        right: 0;
+        top: 51%;
+    }
+    .moto-title{
+        top: 20%;
+        font-size: 7.4vw;
+    }
+    .moto-second{
+        top: 50%;
+        left: 5%;
+        font-size: 7vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .moto-container{
+        height: 75vh;
+    }
+    .moto-img-1{
+        top: 10%;
+        width: 34%;
+    }
+    .moto-img-2{
+        width: 40%;
+    }
+}
