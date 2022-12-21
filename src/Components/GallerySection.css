@@ -1,0 +1,99 @@
+.gallery-section-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.gallery-content-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    font-family: "Lustria" serif;
+    color: #fff;
+    display: grid;
+    grid-template-areas: 
+        "img1 img2 img3"
+        "img1 header img3"
+        "img4 cta img3";
+    gap: .7rem;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 9rem 12rem 9rem;
+}
+.img1, .img2, .img3, .img4{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    grid-area: img1;
+    width: 73%;
+}
+.img2{
+    grid-area: img2;
+    margin-left: -20%;
+    width: 120%;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+    width: 150%;
+}
+.header{
+    grid-area: header;
+    font-size: 5rem;
+    margin-left: -20%;
+    font-weight: 400;
+}
+.cta{
+    grid-area: cta;
+    margin-left: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: "Lustria", serif;
+}
+.cta:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+    .gallery-content-wrapper{
+        grid-template-columns: .3fr .3fr .5fr;
+    }
+    .img1, .img2, .img4{
+        display: none;
+    }
+    .img3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: brightness(.5);
+        height: 100%;
+    }
+    .header{
+        margin: 0;
+        font-size: 4rem;
+    }
+    .cta{
+        margin: 0;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 1480px){
+    .gallery-content-wrapper{
+        height: 50vh;
+    }
+    .img1{
+        width: 84%;
+    }
+    .img4{
+        width: 130%;
+    }
+}
