@@ -30,8 +30,13 @@ nav{
 }
 .menu-container{
     position: relative;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
 }
 .close{
     position: absolute;
@@ -41,16 +46,52 @@ nav{
     width: 32px;
     height: 32px;
 }
-.links li{
-    font-size: 5rem;
-    text-align: center;
-    margin: 2rem;
-    cursor: pointer;
-    font-weight: 300;
-    opacity: 80%;
-    
+.menu-left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 50%;
 }
-
+.menu-right{
+    flex: 1;
+    width: 150%;
+    display: flex;
+    justify-content: right;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+.nav-item:hover > .nav-item-img{
+    width: 120px;
+    transition: .3s all ease-in-out;
+}
+.nav-item-img{
+    
+    width: 0px;
+    height: 100px;
+    object-fit: cover;
+}
+.nav-item p{
+    font-size: 4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    color: #000;
+    text-decoration-line: none;
+}
+.menu-right h3{
+    font-size: 2rem;
+    opacity: .8;
+}
+.menu-right p{
+    font-size: 1.3rem;
+    margin: 1.3rem 0;
+    opacity: .6;
+}
 @media screen and (max-width:800px) {
     .ruma-logo{
         padding-left: 0;
@@ -59,14 +100,43 @@ nav{
         padding: 0 2rem;
     }
     
-    .links li{
-        font-size: 4rem;
-    }
-}@media screen and (max-width:800px) {
-    .links li{
+    .nav-item p{
         font-size: 3rem;
+    }
+    .menu-right h3{
+        font-size: 2rem;
     }
     .close{
         right: 2rem;
+    }
+}
+@media screen and (max-width:700px){
+    .menu-container{
+        gap: 1rem;
+        padding: 0 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item{
+        gap: .4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item-img{
+        display: none;
+    }
+    .nav-item p{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .menu-left{
+        flex: 1;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .menu-right{
+        justify-content: center;
+        text-align: center;
+        margin-top: 3rem;
     }
 }

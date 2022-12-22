@@ -4,6 +4,7 @@ import menu from '/menu.svg'
 import close from '/close.svg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 const Navbar = () => {
   const[nav, setNav] = useState(false)
@@ -21,12 +22,40 @@ const Navbar = () => {
       <img src={close} alt="close" className='close' onClick={() => setNav(!nav)} />
       <div className='menu-container'>
       
-        <ul className='links'>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>GALLERY</li>
-          <li>CONTACT</li>
-        </ul>
+        <div className='menu-left'>
+          <Link  style={{textDecoration: 'none'}}  to="/"><motion.div onClick={() => setNav(!nav)} initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.3}}
+          className='nav-item'>
+            <p>HOME</p>
+            <img src="/Images/nav-img-1.jpg" alt="" className='nav-item-img' />
+          </motion.div></Link>
+          <Link style={{textDecoration: 'none'}} to="/about"><motion.div onClick={() => setNav(!nav)} initial={{opacity: 0, y: 110}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.4}}
+          className='nav-item'>
+            <p>ABOUT</p>
+            <img src="/Images/nav-img-2.jpg" alt=""  className='nav-item-img'/>
+          </motion.div></Link>
+          <motion.div initial={{opacity: 0, y: 120}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.5}}
+          className='nav-item'>
+            <p>GALLERY</p>
+            <img src="/Images/nav-img-3.jpg" alt=""  className='nav-item-img'/>
+          </motion.div>
+          <motion.div initial={{opacity: 0, y: 130}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.6}}
+          className='nav-item'>
+            <p>EXHIBITIONS</p>
+            <img src="/Images/nav-img-4.jpg" alt=""  className='nav-item-img' />
+          </motion.div> 
+        </div>
+
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1.2, delay: 0.8}}
+        className='menu-right'>
+            <div>
+              <h3>CONTACT US</h3>
+              <p>rumagallery@info.com</p>
+              <p>3809 Oakmound Road </p>
+              <p>Chicago, IL</p>
+            </div>
+
+        </motion.div>
+
         </div>
     </motion.div>
     </>

@@ -52,10 +52,14 @@
 
 @media screen and (max-width: 950px) {
     .newsletter-wrapper{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    .newsletter-content, .newsletter-img{
+    .newsletter-content{
         width: 100%;
+    }
+    .newsletter-img{
+        width: 100%;
+        height: 40%;
     }
     .logo-img{
         display: none;
@@ -66,7 +70,13 @@
         font-size: 3rem;
     }
     .newsletter-content{
-        flex: 2;
-        padding: 4rem 0;
+        flex: 1;
+        padding: 4rem 2rem;
+    }
+    .input-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 }
