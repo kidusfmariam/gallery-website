@@ -5,8 +5,10 @@ This is a website made for a fictitious art gallery called RUMA. Ruma is an art 
 
 - ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) `#ffffff`
 - ![#2222222](https://placehold.co/15x15/222222/222222.png) `#222222`
-## Images from [Unsplash](https://unsplash.com)
-##Designed and developed by [Kidus Ayalew] (https://github.com/kidusfmariam/)
+## Images from 
+- [Unsplash](https://unsplash.com)
+## Designed and developed by 
+- [Kidus Ayalew] (https://github.com/kidusfmariam/)
 
 # Screenshots
 Here are some screenshots from the laptop-view of the website.
