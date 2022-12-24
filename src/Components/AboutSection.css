@@ -8,7 +8,7 @@
     width: 30%;
     height: 100vh;
     position: absolute;
-    cursor: none;
+    pointer-events: none;
 }
 .images{
     width: 100%;
