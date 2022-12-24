@@ -28,21 +28,27 @@ const Navbar = () => {
             <p>HOME</p>
             <img src="/Images/nav-img-1.jpg" alt="" className='nav-item-img' />
           </motion.div></Link>
+
+
           <Link style={{textDecoration: 'none'}} to="/about"><motion.div onClick={() => setNav(!nav)} initial={{opacity: 0, y: 110}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.4}}
           className='nav-item'>
             <p>ABOUT</p>
             <img src="/Images/nav-img-2.jpg" alt=""  className='nav-item-img'/>
           </motion.div></Link>
-          <motion.div initial={{opacity: 0, y: 120}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.5}}
+
+
+          <Link  style={{textDecoration: 'none'}}  to="/artists"> <motion.div onClick={() => setNav(!nav)} initial={{opacity: 0, y: 120}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.5}}
           className='nav-item'>
-            <p>GALLERY</p>
+            <p>ARTISTS</p>
             <img src="/Images/nav-img-3.jpg" alt=""  className='nav-item-img'/>
-          </motion.div>
-          <motion.div initial={{opacity: 0, y: 130}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.6}}
+          </motion.div></Link>
+
+
+          <Link  style={{textDecoration: 'none'}}  to="/exhibitions"><motion.div onClick={() => setNav(!nav)} initial={{opacity: 0, y: 130}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1.3, delay: 0.6}}
           className='nav-item'>
             <p>EXHIBITIONS</p>
             <img src="/Images/nav-img-4.jpg" alt=""  className='nav-item-img' />
-          </motion.div> 
+          </motion.div></Link>
         </div>
 
         <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1.2, delay: 0.8}}

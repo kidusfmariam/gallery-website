@@ -1,0 +1,133 @@
+.artists-container{
+    height: 100vh;
+    background-color: #fff;
+    padding: 5rem 0;
+}
+.artists-title{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    opacity: 0.7;
+}
+.artist-names{
+    display: flex;
+    gap: 5rem;
+    margin-top: 4rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.icon{
+    position: absolute;
+    font-size: 3rem;
+    z-index: 99;
+    cursor: pointer;
+}
+.icon:hover{
+    color: rgb(133, 133, 133);
+    transition: .3s;
+}
+.icon-right{
+    right: 0;
+}
+.icon-left{
+    left: 0;
+}
+.artist-names::-webkit-scrollbar{
+    height: 5px;
+    
+}
+.artist-names::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 2px;
+}
+
+.artist-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+.artist-name h1{
+    font-family: 'Lustria', serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: #222;
+    text-align: center;
+}
+.artist-name p{
+    font-size: 2rem;
+    color: #222;
+    opacity: 0;
+    cursor: pointer;
+}
+.artist-name:hover > p {
+  opacity: 1;
+  transition: .5s all ease-in-out;
+}
+
+.artist-image{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    width: 17%;
+    height: 45%;
+    transition: .3s;
+    object-fit: cover;
+}
+.artist-image-one, .artist-image-two, .artist-image-three, .artist-image-four, .artist-image-five, .artist-image-six {
+    opacity: 0;
+    cursor:text;
+    pointer-events: none;
+}
+.artist-name-one:hover .artist-image-one{
+    opacity: 1;
+}
+.artist-name-two:hover .artist-image-two{
+    opacity: 1;
+}
+.artist-name-three:hover .artist-image-three{
+    opacity: 1;
+}
+.artist-name-four:hover .artist-image-four{
+    opacity: 1;
+}
+.artist-name-five:hover .artist-image-five{
+    opacity: 1;
+}
+.artist-name-six:hover .artist-image-six{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .artists-container{
+        height: auto;
+    }
+    .artist-names{
+        flex-direction: column;
+        gap: 5rem;
+        margin-top: 6rem;
+    }
+    .artist-names h1{
+        font-size: 3rem;
+    }
+    .icon{
+        display: none;
+    }
+    .artist-image{
+        display: none;
+    }
+    .artist-name p{
+        opacity: 1;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+}

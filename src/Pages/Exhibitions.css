@@ -1,0 +1,47 @@
+.exhibition-container{
+    background-color: white;
+    padding: 6rem 0;
+    height: auto;
+    overflow-x: hidden;
+
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.upcoming{
+    height: 70vh;
+}
+.exhibition-title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.exhibition-title p{
+    width: 30%;
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+}
+.past{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    height: auto;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .exhibition-title p{
+        font-size: .7rem;
+    }
+    .upcoming{
+        height: 80vh;
+    }
+    .past{
+        grid-template-columns: 1fr;
+    }
+}
