@@ -10,7 +10,8 @@
     margin: 0 auto;
 }
 .upcoming{
-    height: 70vh;
+    min-height: 70vh;
+    max-height: auto;
 }
 .exhibition-title{
     display: flex;
