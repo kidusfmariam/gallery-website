@@ -8,7 +8,7 @@ This is a website made for a fictitious art gallery called RUMA. Ruma is an art 
 ## Images from 
 - [Unsplash](https://unsplash.com)
 ## Designed and developed by 
-- [Kidus Ayalew] (https://github.com/kidusfmariam/)
+- [Kidus Ayalew](https://github.com/kidusfmariam/)
 
 # Screenshots
 Here are some screenshots from the laptop-view of the website.
