@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const CardSm = ({image, title, date, artist}) => {
   return (
     <motion.div
-    initial={{y: 120, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 1.2, delay: 0.4}} 
+    initial={{y: 120, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 1.2, delay: 0.4}} viewport={{once: true}}
     className='card-sm-container'>
         <div className="card-sm-img">
             <img src={image} alt="" />

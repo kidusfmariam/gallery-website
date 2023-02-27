@@ -7,12 +7,12 @@ const CardLg = () => {
     <div className='card-wrapper'>
       <div className='img-container'>
         <motion.div 
-        initial={{width: "100%"}} whileInView={{width: 0}} transition={{duration: 1.2, delay: 0.5}}
+        initial={{width: "100%"}} whileInView={{width: 0}} transition={{duration: 1.2, delay: 0.5}} viewport={{once: true}}
         className='card-lg-overlay'></motion.div>
         <img src="/Images/Exhibtions/Upcoming.jpg" alt="" />
       </div>
       <motion.div 
-      initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1.3, delay: 0.5}}
+      initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1.3, delay: 0.5}} viewport={{once: true}}
       className='content'>
         <h1>THE PATH TO <br></br>LIBERTY</h1>
         <p className='date'>DEC 25 - JAN 15</p>

@@ -6,7 +6,7 @@ const FooterLinks = () => {
   return (
     <footer>
         <motion.hr
-        initial={{width: 0}} whileInView={{width: "95%"}} transition={{duration: 1.3, delay: 0.3}} />
+        initial={{width: 0}} whileInView={{width: "95%"}} transition={{duration: 1.3, delay: 0.3}} viewport={{once: true}} />
         <div className='footer-content'>
         <div className='footer-logo'>
             <img src={Logo} alt="logo" className='footer-logo-img' />

@@ -49,7 +49,11 @@
     bottom: 0;
     width: 95%;
 }
-
+.input-section{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
 @media screen and (max-width: 950px) {
     .newsletter-wrapper{
         flex-direction: column;

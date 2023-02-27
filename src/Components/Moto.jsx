@@ -8,19 +8,19 @@ import { motion } from 'framer-motion'
 const Moto = () => {
   return (
     <div className='moto-container'>
-            <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5}}>
+            <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5}} viewport={{once: true}}>
             <img src={ruma} alt="ruma-logo-svg" className='ruma-logo-svg' />
             </motion.div>
-                <motion.img initial={{height: 0}} whileInView={{height: "auto"}}  transition={{duration: 1}} src={MotoImg1} alt="moto-img-1" className='moto-img moto-img-1' />
+                <motion.img initial={{height: 0}} whileInView={{height: "auto"}}  transition={{duration: 1}} viewport={{once: true}} src={MotoImg1} alt="moto-img-1" className='moto-img moto-img-1' />
           
          
-                <motion.img  initial={{height: 0}} whileInView={{height: "auto"}}  transition={{duration: 1, delay: 0.3}} src={MotoImg2} alt="moto-img-2" className='moto-img moto-img-2' />
+                <motion.img  initial={{height: 0}} whileInView={{height: "auto"}}  transition={{duration: 1, delay: 0.3}} viewport={{once: true}} src={MotoImg2} alt="moto-img-2" className='moto-img moto-img-2' />
            
-                <motion.img  initial={{height: 0}} whileInView={{height: "auto"}}  transition={{duration: 1, delay: 0.5}} src={MotoImg3} alt="moto-img-3" className='moto-img moto-img-3' />
+                <motion.img  initial={{height: 0}} whileInView={{height: "auto"}}  transition={{duration: 1, delay: 0.5}} viewport={{once: true}} src={MotoImg3} alt="moto-img-3" className='moto-img moto-img-3' />
 
-                <motion.h1 initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration:1.1, delay:0.6}} className='moto-title'>we rekindle the spirit of creativity.</motion.h1>
+                <motion.h1 initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration:1.1, delay:0.6}} viewport={{once: true}} className='moto-title'>we rekindle the spirit of creativity.</motion.h1>
 
-                <motion.p initial={{opacity: 0}} whileInView={{opacity: 0.6}} transition={{duration:1.1, delay:0.6}} className='moto-second'>a <br />place <br /> for <br /> art <br />to <br />thrive.</motion.p>
+                <motion.p initial={{opacity: 0}} whileInView={{opacity: 0.6}} transition={{duration:1.1, delay:0.6}} viewport={{once: true}} className='moto-second'>a <br />place <br /> for <br /> art <br />to <br />thrive.</motion.p>
             
     </div>
   )

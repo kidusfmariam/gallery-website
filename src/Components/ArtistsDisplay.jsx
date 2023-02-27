@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './ArtistsDisplay.css'
 import {CiInstagram} from 'react-icons/ci'
 import {AiOutlineRight, AiOutlineLeft} from 'react-icons/ai'
+import { motion } from 'framer-motion'
 const ArtistsDisplay = () => {
     
     const slideLeft  = () =>{
@@ -17,7 +18,11 @@ const ArtistsDisplay = () => {
     <div className='artists-container'>
       <h2 className='artists-title'>FEATURED ARTISTS</h2>
 
-      <div className='artist-names' id='slider'>
+      <motion.div 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 1.2, delay: 0.4}}
+      className='artist-names' id='slider'>
         <p className='icon icon-right' onClick={slideRight}><AiOutlineRight /></p>
         <p className='icon icon-left' onClick={slideLeft}><AiOutlineLeft/></p>
         <div className='artist-name  artist-name-one'>
@@ -59,7 +64,7 @@ const ArtistsDisplay = () => {
     
 
 
-      </div>
+      </motion.div>
     </div>
   )
 }
