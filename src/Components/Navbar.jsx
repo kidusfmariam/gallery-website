@@ -1,5 +1,4 @@
 import React from 'react'
-import ruma from '/RUMALogo.svg'
 import menu from '/menu.svg'
 import close from '/close.svg'
 import { useState } from 'react'
@@ -11,7 +10,7 @@ const Navbar = () => {
   return (
     <>
     <nav>
-        <Link to='/'><img src={ruma} alt="ruma-logo" className='ruma-logo' /></Link>
+        <Link to='/'><img src='/RumaLogo.svg' alt="ruma-logo" className='ruma-logo' /></Link>
         <img src={menu} alt="menu-icon" className='navbar-img' onClick={() => setNav(!nav)} />
     </nav>
     <motion.div 
